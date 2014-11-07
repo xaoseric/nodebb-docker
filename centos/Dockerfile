@@ -7,6 +7,7 @@ RUN yum -y install wget ; yum clean all
 RUN yum -y groupinstall "Development Tools"
 RUN yum -y install nodejs git redis ImageMagick npm
 RUN cd /opt ; git clone https://github.com/NodeBB/NodeBB nodebb 
+RUN cd /opt/nodebb ; npm install
 RUN mkdir /opt/run
 ADD start.sh /opt/run/start.sh
 RUN chmod -v +x /opt/run/start.sh
