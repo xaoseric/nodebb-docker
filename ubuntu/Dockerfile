@@ -11,7 +11,6 @@ RUN apt-get install nodejs npm imagemagick git -y
 RUN cd /opt ; git clone https://github.com/NodeBB/NodeBB nodebb
 RUN cd /opt/nodebb ; npm install
 
-
 # Create a mountable volume
 VOLUME /opt/nodebb
 
