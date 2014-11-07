@@ -1,5 +1,5 @@
 FROM centos:centos7
-MAINTAINER NodeBB <sales@nodebb.org>
+MAINTAINER NodeBB Docker Team <docker-devs@nodebb.org>
 
 # install main packages:
 RUN yum -y update ; yum clean all
