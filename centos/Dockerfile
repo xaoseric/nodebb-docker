@@ -13,5 +13,6 @@ RUN chmod -v +x /opt/run/start.sh
 
 EXPOSE 80
 EXPOSE 443
+EXPOSE 6379
 
 CMD [ "/opt/run/start.sh" ]
