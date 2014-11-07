@@ -8,8 +8,8 @@ RUN apt-get upgrade -y
 RUN apt-get install nodejs nodejs-legacy npm imagemagick git -y
 
 # Install nodebb
-RUN cd /opt ; git clone https://github.com/NodeBB/NodeBB nodebb
-RUN cd /opt/nodebb ; npm install
+RUN cd /opt && git clone https://github.com/NodeBB/NodeBB nodebb
+RUN cd /opt/nodebb && npm install
 
 # Create a mountable volume
 VOLUME /opt/nodebb
