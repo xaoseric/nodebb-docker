@@ -1,5 +1,6 @@
 # Pull base image.
 FROM ubuntu:latest
+MAINTAINER NodeBB Docker Team <docker-devs@nodebb.org>
 
 # Install Node.js
 RUN apt-get update
@@ -17,6 +18,8 @@ VOLUME /opt/nodebb
 WORKDIR /opt/nodebb
 
 # Expose ports
+EXPOSE 80
+EXPOSE 443
 EXPOSE 4567
 
 # Define default command.
